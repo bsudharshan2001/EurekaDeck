@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EurekaDeck</title>
+  <link rel="stylesheet" href="lib/owl.carousel.min.css">
+  <link rel="stylesheet" href="lib/owl.theme.default.min.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div id="error-container" style="display: none;"></div>
+    <h1>EurekaDeck</h1>
+    
+    <div class="controls">
+      <select id="numCards">
+        <option value="5">5 Cards</option>
+        <option value="10" selected>10 Cards</option>
+        <option value="15">15 Cards</option>
+      </select>
+      <button id="generateBtn">Generate Flashcards</button>
+    </div>
+
+    <div class="flashcards-container">
+      <div class="owl-carousel owl-theme" id="flashcardsCarousel">
+        <!-- Flashcards will be inserted here -->
+      </div>
+    </div>
+
+    <div class="analytics">
+      <div class="score">Score: <span id="score">0</span>/<span id="total">0</span></div>
+      <div class="progress-bar">
+        <div id="progressFill"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="lib/jquery-3.6.0.min.js"></script>
+  <script src="lib/owl.carousel.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html> 
